@@ -1,4 +1,6 @@
 FROM httpd:2.4.25-alpine
+MAINTAINER XebiaLabs "info@xebialabs.com"
+
 RUN apk add --no-cache apache2 apache2-proxy openssh supervisor
 ADD resources/supervisord.conf /etc/supervisord.conf
 ADD resources/sshd_config /etc/ssh/sshd_config
