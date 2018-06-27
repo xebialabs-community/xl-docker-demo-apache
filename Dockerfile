@@ -1,4 +1,4 @@
-FROM httpd:2.4.25-alpine
+FROM httpd:2.4.33-alpine
 MAINTAINER XebiaLabs "info@xebialabs.com"
 
 RUN apk add --no-cache apache2 apache2-proxy openssh supervisor
