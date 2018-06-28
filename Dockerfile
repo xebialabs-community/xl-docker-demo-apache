@@ -1,4 +1,5 @@
-FROM httpd:2.4.33-alpine
+ARG httpd_tag
+FROM httpd:$httpd_tag
 MAINTAINER XebiaLabs "info@xebialabs.com"
 
 RUN apk add --no-cache apache2 apache2-proxy openssh supervisor
